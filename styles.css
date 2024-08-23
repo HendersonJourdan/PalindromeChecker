@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 25px;
+  border: 2px solid #ff6f61;
+  outline: none;
+}
+
+input {
+  width: 300px;
+  font-size: 18px;
+  background-color: #fff4e1;
+  color: #333;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+input:focus {
+  background-color: #ffdab9;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8c61;
+  transform: scale(1.05);
+}
+
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff4e1;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 340px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#result.is-palindrome {
+  color: #4CAF50;
+  background-color: #e6ffe6;
+  border: 2px solid #4CAF50;
+}
+
+#result.is-not-palindrome {
+  color: #E53935;
+  background-color: #ffe6e6;
+  border: 2px solid #E53935;
+}
